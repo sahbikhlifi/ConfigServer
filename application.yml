@@ -16,11 +16,18 @@
 #
 
 # the old config
-#server.port:
-#  8761
-#eureka:
-#  client:
-#    register-with-eureka: false
-#    fetch-registry: false
-#  instance:
-#    hostname: localhost
+server.port:
+  8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: localhost
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: ON
+        discovery: ON
